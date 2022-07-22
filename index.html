@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
   </head>
-  <body class="t n reveal-from-bottom">
+  <body class="t n reveal-from-bottom" id="background-animated">
     <div class="rn">
       <header class="nb reveal-from-bottom">
         <div class="tcontainern">
@@ -413,6 +413,23 @@
         </div>
       </footer>
     </div>
+    <script src="js/three.min.js"></script>
+    <script src="js/vanta.cells.min.js"></script>
+    <script>
+      VANTA.FOG({
+        el: "#background-animated",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        highlightColor: 0x0,
+        midtoneColor: 0xb3082,
+        lowlightColor: 0x0,
+        baseColor: 0x0,
+        speed: 2.40
+      })
+      </script>
     <script src="js/main.min.js"></script>
     <script src="js/tilt.js"></script>
   </body>
