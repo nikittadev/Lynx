@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
   </head>
-  <body class="n">
+  <body class="t n reveal-from-bottom" id="background-animated">
     <div class="rn">
       <header class="nb">
         <div class="tcontainern">
@@ -48,7 +48,7 @@
                         <div class="im uo">
                           <label class="z">
                             <input type="checkbox" id="remember">Remember me </label>
-                          <a class="p c" href="#">Forgot password?</a>
+                          <a class="p c" href="forgot-password.html">Forgot password?</a>
                         </div>
                       </fieldset>
                     </form>
@@ -64,7 +64,25 @@
         </section>
       </main>
     </div>
+    <script src="js/three.min.js"></script>
+    <script src="js/vanta.cells.min.js"></script>
+    <script>
+      VANTA.FOG({
+        el: "#background-animated",
+        mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  highlightColor: 0x0,
+  midtoneColor: 0x0,
+  lowlightColor: 0x1eff,
+  baseColor: 0x0,
+  blurFactor: 0.95,
+  speed: 1.50
+      })
+      </script>
     <script src="js/main.min.js"></script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-125021779-1"></script>
+    <script src="js/tilt.js"></script>
   </body>
 </html>
